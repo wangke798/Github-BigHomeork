@@ -37,14 +37,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/blue"
-            android:textSize="30sp"
-            android:text="密   码："
             android:layout_marginLeft="20sp"
-            />
+            android:text="密    码："
+            android:textColor="@color/blue"
+            android:textSize="30sp" />
 
         <EditText
             android:layout_width="223dp"
@@ -57,37 +57,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <Button
             android:layout_width="120sp"
             android:layout_height="wrap_content"
+            android:layout_margin="30sp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/wathet"
             android:text="个人登录"
-            android:layout_margin="30sp"
-            android:textSize="25sp"
             android:textColor="@color/white"
-            android:background="@color/wathet"/>
+            android:textSize="20sp" />
+
         <Button
             android:layout_width="120sp"
             android:layout_height="wrap_content"
-            android:text="组织登录"
             android:layout_margin="30sp"
-            android:textSize="25sp"
+            android:background="@color/wathet"
+            android:text="组织登录"
             android:textColor="@color/white"
-            android:background="@color/wathet"/>
+            android:textSize="20sp" />
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <Button
-            android:layout_width="120sp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="立即注册"
-            android:layout_marginTop="20sp"
             android:layout_marginLeft="40sp"
-            android:textSize="25sp"
+            android:layout_marginTop="20sp"
+            android:background="@color/white"
+            android:text="立即注册"
             android:textColor="@color/grey"
-            android:background="@color/white"/>
+            android:textSize="25sp" />
         <Button
             android:layout_width="120sp"
             android:layout_height="wrap_content"
