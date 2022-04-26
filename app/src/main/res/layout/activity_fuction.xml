@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -12,32 +13,110 @@
     </FrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:orientation="horizontal">
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="103dp"
-            android:scaleType="centerInside"
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/fuction_imageview"
-            android:src="@drawable/guide"/>
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="103dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/fuction_imageview"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:layout_marginStart="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/guide"
+                tools:ignore="NestedWeights" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="首页"
+                android:textSize="12sp"
+                android:layout_marginStart="33dp"
+                android:layout_marginEnd="45dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/fuction_imageview1"
-            android:src="@drawable/guide1"/>
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="103dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/fuction_imageview1"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:layout_marginStart="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/guide1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="发布"
+                android:textSize="12sp"
+                android:layout_marginStart="33dp"
+                android:layout_marginEnd="45dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:id="@+id/fuction_imageview2"
-            android:src="@drawable/guide2"/>
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="103dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/fuction_imageview2"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="100"
+                android:layout_marginStart="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/guide2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:layout_marginEnd="45dp"
+                android:text="消息"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:id="@+id/fuction_imageview3"
-            android:src="@drawable/guide3"/>
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/fuction_imageview3"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/guide3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                android:layout_marginRight="45dp"
+                android:text="我的"
+                android:textSize="12sp" />
+        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>
