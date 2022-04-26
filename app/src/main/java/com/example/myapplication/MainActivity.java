@@ -1,22 +1,22 @@
 package com.example.myapplication;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-
 public class MainActivity extends AppCompatActivity {
-
+    private Button home_button_signin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_1);
+        setContentView(R.layout.activity_main);
 
-        boolean  a; /*第一次修改*/
-        //第二次修改
-        //第四次修改
-        //第五次修改
-        //第六次修改
-        //第七次修改:)
-
+        home_button_signin=findViewById(R.id.home_button_signin);
+        home_button_signin.setOnClickListener(view -> {
+            Intent home_intent=new Intent(MainActivity.this,FunctionActivity.class);
+            startActivity(home_intent);
+        });
     }
 }
