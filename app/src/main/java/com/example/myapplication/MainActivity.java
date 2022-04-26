@@ -8,6 +8,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button home_button_signin;
+    HomePageFragment homepagefragment = new HomePageFragment();
+    PublishFragment publishfragment = new PublishFragment();
+    MessageFragment messagefragment = new MessageFragment();
+    MyFragment myfragment = new MyFragment();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

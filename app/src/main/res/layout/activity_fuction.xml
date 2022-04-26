@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
     <FrameLayout
         android:layout_width="wrap_content"
@@ -34,17 +35,15 @@
                 android:layout_weight="10"
                 android:layout_marginStart="20dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/guide"
-                tools:ignore="NestedWeights" />
+                app:srcCompat = "@drawable/home_color"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="首页"
                 android:textSize="12sp"
+                android:textColor="@drawable/text_color"
                 android:layout_marginStart="33dp"
                 android:layout_marginEnd="45dp"/>
-
-
         </LinearLayout>
 
         <LinearLayout
@@ -60,12 +59,13 @@
                 android:layout_weight="10"
                 android:layout_marginStart="20dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/guide1" />
+                app:srcCompat = "@drawable/publish_color" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="发布"
                 android:textSize="12sp"
+                android:textColor="@drawable/text_color"
                 android:layout_marginStart="33dp"
                 android:layout_marginEnd="45dp"/>
         </LinearLayout>
@@ -83,7 +83,7 @@
                 android:layout_weight="100"
                 android:layout_marginStart="20dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/guide2" />
+                app:srcCompat = "@drawable/message_color" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -91,6 +91,7 @@
                 android:layout_marginStart="33dp"
                 android:layout_marginEnd="45dp"
                 android:text="消息"
+                android:textColor="@drawable/text_color"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -107,7 +108,7 @@
                 android:layout_weight="10"
                 android:layout_marginLeft="20dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/guide3" />
+                app:srcCompat = "@drawable/my_color" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -115,6 +116,7 @@
                 android:layout_marginLeft="33dp"
                 android:layout_marginRight="45dp"
                 android:text="我的"
+                android:textColor="@drawable/text_color"
                 android:textSize="12sp" />
         </LinearLayout>
 

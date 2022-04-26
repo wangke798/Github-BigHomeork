@@ -16,16 +16,18 @@
             <EditText
                 android:layout_width="228dp"
                 android:layout_height="62dp"
+                android:background="@drawable/bg_edittext_normal"
                 android:layout_marginStart="50dp" />
 
             <Button
-                android:id="@+id/find"
+                android:id="@+id/search_button"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="10dp"
-                android:background="@color/red"
                 android:text="搜索"
-                android:textSize="15sp" />
+                android:shadowRadius="15"
+                android:background="@drawable/search_button"
+            android:textSize="15sp" />
 
 
         </LinearLayout>

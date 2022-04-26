@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shape="oval"
+    tools:ignore="NamespaceTypo">
+
+    <!-- 填充的颜色 -->
+    <solid android:color="#FFFFFF" />
+    <!-- 设置按钮的四个角为弧形 -->
+    <!-- android:radius 弧形的半径 -->
+    <corners android:radius="25dip" />
+    <!-- corners ：Button四周为圆角，不需要的可以删除此项 -->
+
+    <corners android:radius="100dp">
+    </corners>
+</shape>
