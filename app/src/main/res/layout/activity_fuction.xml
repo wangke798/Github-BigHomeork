@@ -26,7 +26,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/function_imageview"
+            android:id="@+id/function_imageview1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -38,7 +38,7 @@
             android:textColor="@drawable/text_color" />
 
         <TextView
-            android:id="@+id/function_imageview1"
+            android:id="@+id/function_imageview2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -50,7 +50,7 @@
             android:textColor="@drawable/text_color" />
 
         <TextView
-            android:id="@+id/function_imageview2"
+            android:id="@+id/function_imageview3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -62,7 +62,7 @@
             android:textColor="@drawable/text_color" />
 
         <TextView
-            android:id="@+id/function_imageview3"
+            android:id="@+id/function_imageview4"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"

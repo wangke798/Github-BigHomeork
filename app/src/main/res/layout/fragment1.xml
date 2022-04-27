@@ -3,9 +3,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="fragment1"
-        android:textSize="30sp"/>
+        android:layout_height="125dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_query"
+                android:layout_width="228dp"
+                android:layout_height="62dp"
+                android:background="@drawable/bg_edittext_normal"
+                android:layout_marginStart="50dp" />
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:text="搜索"
+                android:shadowRadius="15"
+                android:background="@drawable/search_button"
+            android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
 </LinearLayout>
