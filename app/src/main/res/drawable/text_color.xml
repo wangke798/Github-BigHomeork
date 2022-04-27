@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:color="#BA4D67" android:state_selected="true"/>
-    <item android:color="#B0B0B0" android:state_selected="false"/>
+    <item android:state_pressed="true" android:color="#F37171"/>//点击后
+    <item android:color="@color/grey"/>//点击前
 </selector>

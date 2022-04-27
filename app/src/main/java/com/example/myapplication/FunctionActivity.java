@@ -3,7 +3,8 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.view.Window;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -11,10 +12,11 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 public class FunctionActivity extends AppCompatActivity {
-    private ImageView fuction_imageview;
-    private ImageView fuction_imageview1;
-    private ImageView fuction_imageview2;
-    private ImageView fuction_imageview3;
+
+    private TextView fuction_imageview;
+    private TextView fuction_imageview1;
+    private TextView fuction_imageview2;
+    private TextView fuction_imageview3;
     FragmentManager fuction_fragmentmanager=getSupportFragmentManager();
     FragmentTransaction fuction_fragmenttransaction=fuction_fragmentmanager.beginTransaction();
     Fragment fuction_fragment=null;

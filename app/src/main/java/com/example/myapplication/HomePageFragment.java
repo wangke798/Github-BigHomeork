@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,13 +14,13 @@ import androidx.fragment.app.Fragment;
 
 
 public class HomePageFragment extends Fragment {
-    private Button button;
+
+
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        //button = (Button) findViewById(R.id.search_button);
-        //Drawable drawable = getDrawable(R.drawable.search_button);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment,container,false);
+
 
     }
 }
