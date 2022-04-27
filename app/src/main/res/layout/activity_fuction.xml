@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:id="@+id/fuction_framelayout">
+        android:id="@+id/function_framelayout">
     </FrameLayout>
 
 
@@ -26,44 +26,48 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/fuction_imageview"
+            android:id="@+id/function_imageview"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:drawableTop="@drawable/home_color"
+            android:background="@drawable/background"
             android:drawablePadding="1dp"
             android:gravity="center"
             android:text="首页"
             android:textColor="@drawable/text_color" />
 
         <TextView
-            android:id="@+id/fuction_imageview1"
+            android:id="@+id/function_imageview1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:drawableTop="@drawable/publish_color"
+            android:background="@drawable/background"
             android:drawablePadding="1dp"
             android:gravity="center"
             android:text="发布"
             android:textColor="@drawable/text_color" />
 
         <TextView
-            android:id="@+id/fuction_imageview2"
+            android:id="@+id/function_imageview2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:drawableTop="@drawable/message_color"
+            android:background="@drawable/background"
             android:drawablePadding="1dp"
             android:gravity="center"
             android:text="消息"
             android:textColor="@drawable/text_color" />
 
         <TextView
-            android:id="@+id/fuction_imageview3"
+            android:id="@+id/function_imageview3"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:drawableTop="@drawable/my_color"
+            android:background="@drawable/background"
             android:drawablePadding="1dp"
             android:gravity="center"
             android:text="我的"
