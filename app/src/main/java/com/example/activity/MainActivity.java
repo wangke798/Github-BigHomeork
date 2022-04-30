@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,12 +6,18 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.fragment.Fragment_FirstPage;
+import com.example.fragment.Fragment_HomePage;
+import com.example.fragment.Fragment_MessagePage;
+import com.example.fragment.Fragment_PublishPage;
+import com.example.myapplication.R;
+
 public class MainActivity extends AppCompatActivity {
     private Button home_button_signin;
-    Fragment1 Fragment1 = new Fragment1();
-    Fragment2 Fragment2 = new Fragment2();
-    Fragment3 Fragment3 = new Fragment3();
-    Fragment4 Fragment4 = new Fragment4();
+    com.example.fragment.Fragment_FirstPage Fragment_FirstPage = new Fragment_FirstPage();
+    com.example.fragment.Fragment_PublishPage Fragment_PublishPage = new Fragment_PublishPage();
+    com.example.fragment.Fragment_MessagePage Fragment_MessagePage = new Fragment_MessagePage();
+    com.example.fragment.Fragment_HomePage Fragment_HomePage = new Fragment_HomePage();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

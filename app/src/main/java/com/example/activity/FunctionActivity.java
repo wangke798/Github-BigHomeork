@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.activity;
 
 
 import android.os.Bundle;
@@ -8,6 +8,12 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+
+import com.example.fragment.Fragment_FirstPage;
+import com.example.fragment.Fragment_HomePage;
+import com.example.fragment.Fragment_MessagePage;
+import com.example.fragment.Fragment_PublishPage;
+import com.example.myapplication.R;
 
 public class FunctionActivity extends AppCompatActivity {
     private TextView function_textview1;
@@ -22,6 +28,7 @@ public class FunctionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fuction);
 
+        //底部的四个状态栏，分别设置一个监听器
         function_textview1=findViewById(R.id.function_imageview1);
         function_textview2=findViewById(R.id.function_imageview2);
         function_textview3=findViewById(R.id.function_imageview3);
@@ -31,7 +38,7 @@ public class FunctionActivity extends AppCompatActivity {
         function_textview2.setOnClickListener(function_listener);
         function_textview3.setOnClickListener(function_listener);
         function_textview4.setOnClickListener(function_listener);
-        function_fragment=new Fragment1();
+        function_fragment=new Fragment_FirstPage();
         function_fragmenttransaction.add(R.id.function_framelayout,function_fragment);
         function_fragmenttransaction.commit();
     }
@@ -50,22 +57,22 @@ public class FunctionActivity extends AppCompatActivity {
             case R.id.function_imageview1:
                 selected();
                 function_textview1.setSelected(true);           //使点击的状态览变化
-                function_fragment=new Fragment1();
+                function_fragment=new Fragment_FirstPage();
                 break;
             case R.id.function_imageview2:
                 selected();
                 function_textview2.setSelected(true);
-                function_fragment=new Fragment2();
+                function_fragment=new Fragment_PublishPage();
                 break;
             case R.id.function_imageview3:
                 selected();
                 function_textview3.setSelected(true);
-                function_fragment=new Fragment3();
+                function_fragment=new Fragment_MessagePage();
                 break;
             case R.id.function_imageview4:
                 selected();
                 function_textview4.setSelected(true);
-                function_fragment=new Fragment4();
+                function_fragment=new Fragment_HomePage();
                 break;
         }
 
