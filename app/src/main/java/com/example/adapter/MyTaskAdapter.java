@@ -14,7 +14,6 @@ import java.util.Map;
 public class MyTaskAdapter extends SimpleAdapter {
     private Context context;
 
-
     public void setIndex(int index) {
         this.index = index;
     }
