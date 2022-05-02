@@ -18,9 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.activity.FunctionActivity"
-            android:label="function_activity">
-        </activity>
+        <activity
+            android:name="com.example.activity.FunctionActivity"
+            android:label="function_activity"></activity>
     </application>
 
 </manifest>
