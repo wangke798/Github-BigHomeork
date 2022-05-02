@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable-v24/accept_background.xml" value="0.2585" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable-xhdpi/background.xml" value="0.2585" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable-xhdpi/bg_edittext_normal.xml" value="0.2175" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable-xhdpi/gradient_ramp.xml" value="0.2585" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable-xhdpi/search_button.xml" value="0.2585" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable-xhdpi/text_color.xml" value="0.1635" />
@@ -18,14 +21,15 @@
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/search_button.xml" value="0.206" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/shape.xml" value="0.2585" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/text_color.xml" value="0.196" />
-        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/activity_fuction.xml" value="0.4033613316075515" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/activity_fuction.xml" value="0.26621847886098404" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/activity_fuction1.xml" value="0.11197916666666667" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/activity_function1.xml" value="0.1" />
-        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/activity_main.xml" value="0.23693379790940766" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/activity_main.xml" value="0.26621847886098404" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/activity_main_1.xml" value="0.1" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment.xml" value="0.1" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment1.xml" value="0.26621847886098404" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment1_item.xml" value="0.253125" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment1_listview.xml" value="0.1" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment2.xml" value="0.24947916666666667" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment3.xml" value="0.253125" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment4.xml" value="0.253125" />

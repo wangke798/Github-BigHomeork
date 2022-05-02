@@ -1,17 +1,16 @@
-package com.example.adapter;
+package com.example.Adapter;
 
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SimpleAdapter;
 
-import com.example.fragment.Fragment_FirstPage;
 import com.example.myapplication.R;
 
 import java.util.List;
 import java.util.Map;
 
-public class MyTaskAdapter extends SimpleAdapter {
+public class Fragment1_Adapter extends SimpleAdapter {
     private Context context;
 
     public void setIndex(int index) {
@@ -19,7 +18,7 @@ public class MyTaskAdapter extends SimpleAdapter {
     }
 
     private int index=-1;
-    public MyTaskAdapter(Context context, List<? extends Map<String, ?>> data, int resource, String[] from, int[] to) {
+    public Fragment1_Adapter(Context context, List<? extends Map<String, ?>> data, int resource, String[] from, int[] to) {
         super(context, data, resource, from, to);
         this.context = context;
     }
