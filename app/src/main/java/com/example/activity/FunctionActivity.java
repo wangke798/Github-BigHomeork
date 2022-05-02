@@ -56,7 +56,7 @@ public class FunctionActivity extends AppCompatActivity {
         switch (view.getId()){
             case R.id.function_imageview1:
                 selected();
-                function_textview1.setSelected(true);           //使点击的状态览变化
+                function_textview1.setSelected(true);           //使点击的状态栏变化
                 function_fragment=new Fragment_FirstPage();
                 break;
             case R.id.function_imageview2:
