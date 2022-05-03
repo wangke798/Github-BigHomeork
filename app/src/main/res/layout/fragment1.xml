@@ -66,17 +66,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/wathet"
+        android:background="#4BDDBFBF"
         android:orientation="vertical">
 
         <ListView
             android:id="@+id/mylistview"
-            android:layout_width="370dp"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:dividerHeight="10dp"
-            android:divider="@color/white"
-            android:layout_height="match_parent"/>
+            android:background="#FFFFFF"
+            android:divider="#4BDDBFBF"
+            android:dividerHeight="10dp" />
 
 
 

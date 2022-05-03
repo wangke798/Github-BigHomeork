@@ -27,7 +27,7 @@ public class Fragment_FirstPage extends Fragment  {
     private String[] text={"任务1","任务2","任务3","任务4","任务5","任务6",};
     private String[] text1={"任务内容1","任务内容2","任务内容3","任务内容4","任务内容5","任务内容6",};
     private String[] button={"接受"};
-    private int[] photo={R.drawable.wangke};
+    private int[] photo={R.drawable.photo};
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);    //这是生命周期中的函数，经常是把初始数据写在这里
