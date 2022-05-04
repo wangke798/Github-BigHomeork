@@ -195,5 +195,4 @@
             android:layout_gravity="center"
             android:textStyle="bold"/>
     </FrameLayout>
-
 </LinearLayout>
