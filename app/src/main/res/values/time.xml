@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time">
+        <item>时间</item>
+        <item>00:00-01:00</item>
+        <item>01:00-02:00</item>
+        <item>02:00-03:00</item>
+        <item>03:00-04:00</item>
+        <item>04:00-05:00</item>
+        <item>05:00-06:00</item>
+        <item>06:00-07:00</item>
+        <item>07:00-08:00</item>
+        <item>08:00-09:00</item>
+        <item>09:00-10:00</item>
+        <item>11:00-12:00</item>
+    </string-array>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="adress">
+        <item>地点</item>
+        <item>河南大学东苑宿舍</item>
+        <item>河南大学南苑宿舍</item>
+        <item>河南大学北苑宿舍</item>
+        <item>河南大学华苑宿舍</item>
+        <item>河南大学综合楼</item>
+        <item>河南大学图书馆</item>
+    </string-array>
+</resources>

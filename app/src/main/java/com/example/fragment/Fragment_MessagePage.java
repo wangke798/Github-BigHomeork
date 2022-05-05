@@ -15,7 +15,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
 import com.example.activity.MessageDatabase;
-import com.example.adapter.Fragment3BaseAdapter;
+import com.example.Adapter.Fragment3_BaseAdapter;
 import com.example.myapplication.R;
 
 import java.util.ArrayList;
@@ -80,7 +80,7 @@ public class Fragment_MessagePage extends Fragment {
 //        });
 
         //为页面添加baseAdapter
-        Fragment3BaseAdapter baseAdapter = new Fragment3BaseAdapter(fragment3_listview.getContext(), list);
+        Fragment3_BaseAdapter baseAdapter = new Fragment3_BaseAdapter(fragment3_listview.getContext(), list);
         fragment3_listview.setAdapter(baseAdapter);
         fragment3_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

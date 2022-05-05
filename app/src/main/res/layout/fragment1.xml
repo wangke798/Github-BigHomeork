@@ -7,14 +7,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="173dp"
+        android:layout_height="99dp"
         android:background="@drawable/gradient_ramp"
         android:orientation="vertical">
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <EditText
@@ -38,18 +38,32 @@
                 android:paddingBottom="8dp" />
 
 
-
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="46dp">
 
             <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:id="@+id/spinner1"
+                android:layout_width="134dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:entries="@array/adress" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:entries="@array/price" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:entries="@array/time" />
         </LinearLayout>
     </LinearLayout>
 
@@ -65,21 +79,18 @@
     <!--接受任务页面-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
         android:background="#4BDDBFBF"
         android:orientation="vertical">
 
         <ListView
             android:id="@+id/mylistview"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
             android:background="#FFFFFF"
             android:divider="#4BDDBFBF"
             android:dividerHeight="10dp" />
-
-
-
 
 
     </LinearLayout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true" android:color="#F37171"/>//点击后
-    <item android:color="@color/grey"/>//点击前
+    <item android:color="@color/red"/>//点击前
 </selector>
 
 <!--底部导航栏点击字体变色-->

@@ -1,4 +1,4 @@
-package com.example.adapter;
+package com.example.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,12 +13,12 @@ import com.example.myapplication.R;
 
 import java.util.List;
 
-public class Fragment3BaseAdapter extends BaseAdapter {
+public class Fragment3_BaseAdapter extends BaseAdapter {
     private Context context;
     private List<MessageDatabase> message_list;
 
 
-    public Fragment3BaseAdapter(Context context,List<MessageDatabase> message_list) {
+    public Fragment3_BaseAdapter(Context context, List<MessageDatabase> message_list) {
         this.context = context;
         this.message_list = message_list;
     }
