@@ -1,11 +1,12 @@
 package com.example.fragment;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -14,7 +15,6 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.Adapter.Fragment1_Adapter;
-import com.example.activity.MainActivity;
 import com.example.myapplication.R;
 
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class Fragment_FirstPage extends Fragment  {
+public class Fragment_FirstPage extends Fragment{
 
     public Button mybutton;
     public ListView mylistview;
@@ -71,6 +71,7 @@ public class Fragment_FirstPage extends Fragment  {
             R.drawable.photo6,
             R.drawable.photo7,
             R.drawable.photo8};
+
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);    //这是生命周期中的函数，经常是把初始数据写在这里
@@ -91,6 +92,8 @@ public class Fragment_FirstPage extends Fragment  {
         mylistview=fragmentView.findViewById(R.id.mylistview);
         mybutton=fragmentView.findViewById(R.id.mybutton);
 
+
+
         //将文字填入listview中
         Fragment1_Adapter simpleAdapter=new Fragment1_Adapter(getActivity(),listsimple,R.layout.fragment1_listview,
                 new String[]{"text","text1","text2","button","photo"},
@@ -98,9 +101,15 @@ public class Fragment_FirstPage extends Fragment  {
 
         mylistview.setAdapter(simpleAdapter);
 
-        //listview中的点击事件
+
+
+        //listview中button的点击事件
+        Button mybutton = fragmentView.findViewById(R.id.mybutton);
+
+
 
         return fragmentView;
     }
+
 
 }

@@ -17,6 +17,7 @@
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2585" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/message_color.xml" value="0.196" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/my_color.xml" value="0.196" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/page2_edit_background.xml" value="0.1" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/publish_color.xml" value="0.196" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/search_button.xml" value="0.206" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/shape.xml" value="0.2585" />
@@ -30,11 +31,16 @@
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment1.xml" value="0.26621847886098404" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment1_item.xml" value="0.253125" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment1_listview.xml" value="0.20168066580377575" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment1_popupwindow.xml" value="0.253125" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment2.xml" value="0.24947916666666667" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment3.xml" value="0.253125" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment3_message_item.xml" value="0.11197916666666667" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment4.xml" value="0.253125" />
       </map>
     </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment1_popupwindow.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

@@ -26,14 +26,9 @@ public class Fragment1_Adapter extends SimpleAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = super.getView(position, convertView, parent);
-        if (position % 2 == 0) {
-            view.setBackgroundColor(context.getResources().getColor(R.color.purple_200));
-        } else {
-            view.setBackgroundColor(context.getResources().getColor(R.color.teal_700));
-        }
-        if(position==index){
-            view.setBackgroundColor(context.getResources().getColor(R.color.teal_200));
-        }
+
+        view.setBackgroundColor(context.getResources().getColor(R.color.white));
+
         return view;
     }
 }
