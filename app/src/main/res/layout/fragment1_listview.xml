@@ -29,6 +29,7 @@
         <TextView
             android:id="@+id/mytextview2"
             android:layout_width="230dp"
+            android:textColor="@color/blue"
             android:layout_height="wrap_content" />
     </LinearLayout>
 
@@ -36,6 +37,8 @@
     <Button
         android:id="@+id/mybutton"
         android:layout_width="46dp"
+        android:text="接受"
         android:layout_height="match_parent"
-        android:background="@color/red"></Button>
+        android:background="@color/red"
+    />
 </LinearLayout>
