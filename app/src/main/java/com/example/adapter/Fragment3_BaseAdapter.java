@@ -1,4 +1,4 @@
-package com.example.Adapter;
+package com.example.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -45,9 +45,9 @@ public class Fragment3_BaseAdapter extends BaseAdapter {
             LayoutInflater layoutInflater = LayoutInflater.from(this.context);
             view = layoutInflater.inflate(R.layout.fragment3_message_item, null);
             viewHolder.message_name = view.findViewById(R.id.message_name);
-            viewHolder.message_detail = view.findViewById(R.id.message_detail);
+            viewHolder.last_message = view.findViewById(R.id.last_message);
+            viewHolder.message_time = view.findViewById(R.id.message_time);
             viewHolder.header = view.findViewById(R.id.header);
-
             view.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) view.getTag();
@@ -55,16 +55,18 @@ public class Fragment3_BaseAdapter extends BaseAdapter {
 
         MessageDatabase message = message_list.get(i);
         viewHolder.message_name.setText((message.getMessage_name()));
-        viewHolder.message_detail.setText((message.getMessage_detail()));
+        viewHolder.last_message.setText((message.getLast_message()));
+        viewHolder.message_time.setText((message.getMessage_time()));
         viewHolder.header.setImageResource(message.getHeader());
-
         return view;
     }
 
 
-    class ViewHolder {
-        TextView message_name;
-        TextView message_detail;
-        ImageView header;
+    private class ViewHolder {
+        TextView message_name;          //名字
+        TextView last_message;          //最后一条消息
+        TextView message_time;          //最后一条消息的时间
+        ImageView header;               //头像
+        List<String> message_detail;    //所有消息
     }
 }

@@ -20,7 +20,7 @@
         </activity>
         <activity
             android:name="com.example.activity.FunctionActivity"
-            android:label="function_activity"></activity>
+            android:label="function_activity" />
     </application>
 
 </manifest>
