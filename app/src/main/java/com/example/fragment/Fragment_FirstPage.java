@@ -16,19 +16,19 @@ import androidx.fragment.app.Fragment;
 
 import com.example.adapter.Fragment1_Adapter;
 import com.example.myapplication.R;
+import com.example.optimization.Tasks;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+public class Fragment_FirstPage extends Fragment {
 
+    private ListView mylistview;
+    private List<Tasks> datas=new ArrayList<Tasks>();
+    private Fragment1_Adapter adapter1;
 
-public class Fragment_FirstPage extends Fragment{
-
-    public Button mybutton;
-    public ListView mylistview;
-    public List<Map<String,Object>> listsimple=new ArrayList();
-    public String[] text={
+    public String[] text = {
             "送快递",
             "送外卖",
             "送花",
@@ -39,7 +39,7 @@ public class Fragment_FirstPage extends Fragment{
             "送手机",
             "送校园卡"
     };
-    public String[] text1={
+    public String[] text1 = {
             "将包裹送到河南大学东苑宿舍",
             "将外卖送到东苑宿舍20号楼",
             "将花送到东苑宿舍19号楼",
@@ -50,7 +50,7 @@ public class Fragment_FirstPage extends Fragment{
             "将手机送到计算机学院512",
             "将校园卡送到计算机学院114"
     };
-    public String[] text2={
+    public String[] text2 = {
             "费用：10元",
             "费用：2元",
             "费用：5元",
@@ -61,8 +61,8 @@ public class Fragment_FirstPage extends Fragment{
             "费用：31元",
             "费用：17元"
     };
-    public String[] button={"接受"};
-    public int[] photo={R.drawable.photo,
+    public int[] photo = {
+            R.drawable.photo,
             R.drawable.photo1,
             R.drawable.photo2,
             R.drawable.photo3,
@@ -73,43 +73,24 @@ public class Fragment_FirstPage extends Fragment{
             R.drawable.photo8};
 
     @Override
-    public void onAttach(@NonNull Context context) {
-        super.onAttach(context);    //这是生命周期中的函数，经常是把初始数据写在这里
-    }
-
-    @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        for(int i=0;i<text.length;i++){
-            Map<String,Object> item=new HashMap<>();
-            item.put("text",text[i]);
-            item.put("text1",text1[i]);
-            item.put("text2",text2[i]);
-            item.put("button",button[0]);
-            item.put("photo",photo[i]);
-            listsimple.add(item);
-        }
-        View fragmentView= inflater.inflate(R.layout.fragment1, container, false);
-        mylistview=fragmentView.findViewById(R.id.mylistview);
-        mybutton=fragmentView.findViewById(R.id.mybutton);
+        super.onCreate(savedInstanceState);
+        View fragmentView = inflater.inflate(R.layout.fragment1, container,false);
 
+        initDatas();//初始化数据
+        mylistview=(ListView)fragmentView.findViewById(R.id.mylistview);
+        adapter1=new Fragment1_Adapter(getActivity(),datas);
+        mylistview.setAdapter(adapter1);
 
+    return fragmentView;
 
-        //将文字填入listview中
-        Fragment1_Adapter simpleAdapter=new Fragment1_Adapter(getActivity(),listsimple,R.layout.fragment1_listview,
-                new String[]{"text","text1","text2","button","photo"},
-                new int[]{R.id.mytextview,R.id.mytextview1,R.id.mytextview2,R.id.mybutton,R.id.myphoto});
-
-        mylistview.setAdapter(simpleAdapter);
-
-
-
-        //listview中button的点击事件
-        Button mybutton = fragmentView.findViewById(R.id.mybutton);
-
-
-
-        return fragmentView;
     }
+    private void initDatas(){
+        for(int i=0;i<text.length;i++){
+            Tasks task=new Tasks(text[i],text1[i],text2[i],photo[i]);
+            datas.add(task);
+        }
 
 
+    }
 }
