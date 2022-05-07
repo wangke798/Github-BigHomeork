@@ -36,11 +36,10 @@
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment3.xml" value="0.253125" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment3_message_item.xml" value="0.11197916666666667" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment4.xml" value="0.253125" />
+        <entry key="..\:/AndroidStudioWorkSpace/BigHomework/app/src/main/res/layout/activity_fuction.xml" value="0.12335359675785208" />
+        <entry key="..\:/AndroidStudioWorkSpace/BigHomework/app/src/main/res/layout/fragment3_message_item.xml" value="0.4" />
       </map>
     </option>
-  </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment1_popupwindow.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

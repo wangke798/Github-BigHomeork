@@ -1,4 +1,4 @@
-package com.example.Adapter;
+package com.example.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -46,8 +46,8 @@ public class Fragment3_BaseAdapter extends BaseAdapter {
             view = layoutInflater.inflate(R.layout.fragment3_message_item, null);
             viewHolder.message_name = view.findViewById(R.id.message_name);
             viewHolder.message_detail = view.findViewById(R.id.message_detail);
+            viewHolder.message_time = view.findViewById(R.id.message_time);
             viewHolder.header = view.findViewById(R.id.header);
-
             view.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) view.getTag();
@@ -56,8 +56,8 @@ public class Fragment3_BaseAdapter extends BaseAdapter {
         MessageDatabase message = message_list.get(i);
         viewHolder.message_name.setText((message.getMessage_name()));
         viewHolder.message_detail.setText((message.getMessage_detail()));
+        viewHolder.message_time.setText((message.getMessage_time()));
         viewHolder.header.setImageResource(message.getHeader());
-
         return view;
     }
 
@@ -65,6 +65,7 @@ public class Fragment3_BaseAdapter extends BaseAdapter {
     class ViewHolder {
         TextView message_name;
         TextView message_detail;
+        TextView message_time;
         ImageView header;
     }
 }
