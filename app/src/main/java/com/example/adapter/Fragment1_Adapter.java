@@ -96,6 +96,7 @@ public class Fragment1_Adapter extends BaseAdapter{
         return v;
     }
 }
+
 class ViewHold{
     ImageView photo;
     TextView text;
