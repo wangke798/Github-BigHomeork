@@ -14,7 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.Adapter.Fragment1_Adapter;
+import com.example.adapter.Fragment1_Adapter;
 import com.example.myapplication.R;
 
 import java.util.ArrayList;
