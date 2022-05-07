@@ -52,7 +52,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/message_detail"
+                    android:id="@+id/last_message"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
                     android:layout_gravity="bottom"

@@ -25,7 +25,7 @@ public class Fragment_MessagePage extends Fragment {
     private ListView fragment3_listview;
     private List<MessageDatabase> list = new ArrayList<>();
     private String[] message_name = {"张三","李四"};
-    private String[] message_detail = {"你好啊！","hhhh"};
+    private String[] last_message = {"你好啊！","hhhh"};
     private String[] message_time = {"2021年10月1日","10:21"};
     private int header1 = R.drawable.header;
     private int header2 = R.drawable.header2;
@@ -39,9 +39,9 @@ public class Fragment_MessagePage extends Fragment {
         fragment3_listview = view.findViewById(R.id.fragment3_listview);
         for(int i = 0; i < 30; i ++){
             if(i % 2 == 0){
-                message = new MessageDatabase(message_name[0],message_detail[0],message_time[0],header1);
+                message = new MessageDatabase(message_name[0],last_message[0],message_time[0],header1);
             } else{
-                message = new MessageDatabase(message_name[1],message_detail[1],message_time[1],header2);
+                message = new MessageDatabase(message_name[1],last_message[1],message_time[1],header2);
             }
             list.add(message);
         }
