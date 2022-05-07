@@ -86,7 +86,7 @@ public class Fragment1_Adapter extends BaseAdapter{
                 alertDialog1.setButton(DialogInterface.BUTTON_NEGATIVE, "取消", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(context, "您取消了按钮任务", Toast.LENGTH_LONG).show();
+                        Toast.makeText(context, "您取消了接收任务", Toast.LENGTH_LONG).show();
                     }
                 });
                 alertDialog1.show();
