@@ -7,6 +7,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="消息"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:background="@drawable/gradient_ramp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:orientation="horizontal">
         <EditText
             android:id="@+id/search_text"

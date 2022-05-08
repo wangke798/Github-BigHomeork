@@ -27,11 +27,56 @@ import java.util.List;
 public class Fragment_MessagePage extends Fragment {
     private ListView fragment3_listview;
     private List<MessageDatabase> list = new ArrayList<>();
-    private String[] message_name = {"张三","李四"};
-    private String[] last_message = {"你好啊！","hhhh"};
-    private String[] message_time = {"2021年10月1日","10:21"};
-    private int header1 = R.drawable.header;
-    private int header2 = R.drawable.header2;
+    private String[] message_name = {
+            "彤雨晴",
+            "萧南莲",
+            "宋宝宝",
+            "影伴人久",
+            "弘香薇",
+            "祁玲玲",
+            "李念瑶",
+            "席振华",
+            "藏怀幕",
+            "青衫烟雨客",
+            "公孙如雪"};
+    private String[] last_message = {
+            "你好啊！",
+            "hhhh",
+            "在吗？",
+            "你要帮我送外卖吗？",
+            "将花送到东苑宿舍19号楼，可以吗？",
+            "来送电脑啦！",
+            "哈哈哈,你好帅啊！",
+            "饮料好喝吗？",
+            "确定实在201吗？",
+            "嘿,小伙子手机不错啊！",
+            "来了,来了!"};
+    private String[] message_time = {
+            "2021年10月1日",
+            "10:21",
+            "昨天",
+            "8:11",
+            "9月11日",
+            "10::10",
+            "10:21",
+            "前天",
+            "0:11",
+            "4月10日",
+            "2019年12月19日",
+            "2020年6月1日",};
+    private int header[] = {
+            R.drawable.photo,
+            R.drawable.photo1,
+            R.drawable.photo2,
+            R.drawable.photo3,
+            R.drawable.photo4,
+            R.drawable.photo5,
+            R.drawable.photo6,
+            R.drawable.photo7,
+            R.drawable.photo8,
+            R.drawable.photo9,
+            R.drawable.photo10,
+    };
     private MessageDatabase message;
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -41,13 +86,9 @@ public class Fragment_MessagePage extends Fragment {
 
         //将message添加到list中
         fragment3_listview = view.findViewById(R.id.fragment3_listview);
-        for(int i = 0; i < 30; i ++){
-            if(i % 2 == 0){
-                message = new MessageDatabase(message_name[0],last_message[0],message_time[0],header1);
-            } else{
-                message = new MessageDatabase(message_name[1],last_message[1],message_time[1],header2);
-            }
-            list.add(message);
+        for(int i = 0; i < 11; i ++){
+                message = new MessageDatabase(message_name[i],last_message[i],message_time[i],header[i]);
+                list.add(message);
         }
 
         //为页面添加baseAdapter
