@@ -12,7 +12,7 @@
             android:layout_height="match_parent"
             android:text="发布任务"
             android:textColor="#FF496E"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:gravity="center"
             android:textStyle="bold"/>
     </LinearLayout>
