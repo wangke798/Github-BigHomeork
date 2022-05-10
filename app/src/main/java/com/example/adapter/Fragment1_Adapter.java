@@ -1,4 +1,4 @@
-package com.example.adapter;
+package com.example.Adapter;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -11,8 +11,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
 import com.example.optimization.Tasks;

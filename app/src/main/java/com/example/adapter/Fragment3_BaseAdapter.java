@@ -1,4 +1,4 @@
-package com.example.adapter;
+package com.example.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.activity.MessageDatabase;
+import com.example.Activity.MessageDatabase;
 import com.example.myapplication.R;
 
 import java.util.List;

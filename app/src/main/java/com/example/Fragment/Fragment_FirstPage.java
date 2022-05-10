@@ -1,4 +1,4 @@
-package com.example.Fragment;
+package com.example.fragment;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -14,7 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.Adapter.Fragment1_Adapter;
+import com.example.adapter.Fragment1_Adapter;
 import com.example.myapplication.R;
 import com.example.optimization.Tasks;
 

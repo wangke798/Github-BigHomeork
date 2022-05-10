@@ -1,4 +1,4 @@
-package com.example.Activity;
+package com.example.activity;
 
 
 import android.os.Bundle;
@@ -9,10 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.Fragment.Fragment_FirstPage;
-import com.example.Fragment.Fragment_HomePage;
-import com.example.Fragment.Fragment_MessagePage;
-import com.example.Fragment.Fragment_PublishPage;
+import com.example.fragment.Fragment_FirstPage;
+import com.example.fragment.Fragment_HomePage;
+import com.example.fragment.Fragment_MessagePage;
+import com.example.fragment.Fragment_PublishPage;
 import com.example.myapplication.R;
 
 public class FunctionActivity extends AppCompatActivity {

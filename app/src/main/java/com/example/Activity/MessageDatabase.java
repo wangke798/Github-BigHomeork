@@ -1,4 +1,4 @@
-package com.example.Activity;
+package com.example.activity;
 
 import java.util.List;
 
@@ -56,7 +56,7 @@ public class MessageDatabase {
         this.message_name = message_name;
     }
 
-    public void setMessage_detail(String last_message) {
+    public void setMessage_detail(String  last_message) {
         this.message_detail.add(last_message);
     }
 

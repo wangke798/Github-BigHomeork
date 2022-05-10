@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name="com.example.activity.MainActivity"
+            android:name="com.example.Activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.activity.FunctionActivity"
+            android:name="com.example.Activity.FunctionActivity"
             android:label="function_activity" />
     </application>
 
