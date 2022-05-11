@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name = "agreement"><Data><![CDATA[<font color="#ff5a00">你好吗？</font>]]></Data></string> =
 </resources>

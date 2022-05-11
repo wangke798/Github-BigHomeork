@@ -87,6 +87,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/register_button"
             android:layout_width="80dp"
             android:layout_height="25dp"
             android:layout_marginLeft="100sp"
@@ -104,6 +105,7 @@
             android:textColor="@color/grey" />
 
         <Button
+            android:id="@+id/findback_password_button"
             android:layout_width="80dp"
             android:layout_height="25dp"
             android:layout_marginLeft="25sp"

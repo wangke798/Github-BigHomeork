@@ -32,10 +32,10 @@
                 android:layout_marginStart="3dp"
                 android:layout_marginTop="10dp"
                 android:drawableLeft="@drawable/fangdajing"
-                android:paddingLeft="11dp"
+                android:paddingLeft="6dp"
                 android:drawableRight="@drawable/cinema"
                 android:paddingRight="11dp"
-                android:text="  mini主机"
+                android:hint="河南大学"
                 android:textColor="@color/teal_700"
                 android:background="@drawable/bg_edittext_normal" />
 
