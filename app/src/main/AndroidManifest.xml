@@ -21,6 +21,14 @@
         <activity
             android:name="com.example.Activity.FunctionActivity"
             android:label="function_activity" />
+        <activity
+            android:name="com.example.Activity.FindPasswordActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.example.Activity.RegisterActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
