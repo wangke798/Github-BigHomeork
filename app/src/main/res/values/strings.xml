@@ -1,4 +1,55 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name = "agreement"><Data><![CDATA[<font color="#ff5a00">你好吗？</font>]]></Data></string> =
+
+    <string name="title_wode">我的淘宝</string>
+    <string name="title_gouwuche">购物车</string>
+    <string name="title_xiaoxi">消息</string>
+    <string name="title_weitao">微淘</string>
+    <string name="title_quanbu">首页</string>
+    <string name="dianpu1">淘气值</string>
+    <string name="xinxi1">开通88vip全年预计可省1813元！</string>
+    <string name="shijian1">14:46</string>
+
+    <string name="dianpu2">菜鸟驿站</string>
+    <string name="xinxi2">520，送你一个甜蜜礼包</string>
+    <string name="shijian2">07:24</string>
+
+    <string name="dianpu3">淘宝头条</string>
+    <string name="xinxi3">汪涵首档直播，万瓶茅台低价囤！</string>
+    <string name="shijian3">星期日</string>
+
+    <string name="dianpu4">罗曼家居生活馆</string>
+    <string name="xinxi4">亲！请核对一下订单哦！</string>
+    <string name="shijian4">星期日</string>
+
+    <string name="dianpu5">绿联数码旗舰店</string>
+    <string name="xinxi5">[亲！请核对信息哦！]</string>
+    <string name="shijian5">星期五</string>
+
+    <string name="qinqinghao">亲情号</string>
+    <string name="wode_nicheng">托尼的芝士汉堡</string>
+    <string name="wode_shoucangjia_count">297</string>
+    <string name="wode_guanzhudianpu_count">56</string>
+    <string name="wode_zuji_count">267</string>
+    <string name="wode_hongbaokaquan_count">2</string>
+    <string name="wode_shoucangjia">收藏夹</string>
+    <string name="wode_guanzhudianpu">关注店铺</string>
+    <string name="wode_zuji">足迹</string>
+    <string name="wode_hongbaokaquan">红包卡券</string>
+
+    <string name="huiyuanzhongxin">会员中心</string>
+    <string name="tianmaojifen">天猫积分</string>
+    <string name="hongbaoshengqianka">红包省钱卡</string>
+    <string name="hongbaoqiandao">红包签到</string>
+
+    <string name="huiyuanzhongxin2">领吃喝玩乐特权</string>
+    <string name="tianmaojifen2">做任务赚积分</string>
+    <string name="hongbaoshengqianka2">领95元红包</string>
+    <string name="hongbaoqiandao2">每天都能领红包</string>
+
+    <string name="wode_dingdan1">待付款</string>
+    <string name="wode_dingdan2">待发货</string>
+    <string name="wode_dingdan3">待收货</string>
+    <string name="wode_dingdan4">评价</string>
+    <string name="wode_dingdan5">退款/售后</string>
 </resources>
