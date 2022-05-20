@@ -19,30 +19,6 @@
             android:background="#0000"
             android:src="@mipmap/shezhi" />
 
-        <ImageButton
-            android:id="@+id/wode_tongxunlu"
-            style="@style/wode_dingbucaidanlan1"
-            android:layout_toLeftOf="@+id/shezhi"
-            android:background="#0000"
-            android:src="@mipmap/wode_tongxunlu" />
-
-        <ImageButton
-            android:id="@+id/zhuti"
-            style="@style/wode_dingbucaidanlan1"
-            android:layout_toLeftOf="@+id/wode_tongxunlu"
-            android:background="#0000"
-            android:src="@mipmap/zhuti" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginRight="18.7dp"
-            android:layout_toLeftOf="@+id/zhuti"
-            android:drawableLeft="@mipmap/qinqinghao"
-            android:gravity="center"
-            android:text="@string/qinqinghao"
-            android:textColor="#090909"
-            android:textSize="11.2sp" />
     </RelativeLayout>
 
     //头像昵称
@@ -63,65 +39,26 @@
     </RelativeLayout>
 
 
-    //收藏夹等
-    <TableLayout
-        style="@style/wode_shoucangjia">
-        <TableRow >
-            <TextView
-                android:id="@+id/shoucangjia_count"
-                android:text="@string/wode_shoucangjia_count"
-                style="@style/wode_shoucangjia_count"/>
-            <TextView
-                android:id="@+id/guanzhudianpu_count"
-                android:text="@string/wode_guanzhudianpu_count"
-                style="@style/wode_shoucangjia_count"/>
-            <TextView
-                android:id="@+id/zuji_count"
-                android:text="@string/wode_zuji_count"
-                style="@style/wode_shoucangjia_count"/>
-            <TextView
-                android:id="@+id/hongbaokaquan_count"
-                android:text="@string/wode_hongbaokaquan_count"
-                style="@style/wode_shoucangjia_count"/>
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:id="@+id/shoucangjia"
-                android:text="@string/wode_shoucangjia"
-                style="@style/wode_shoucangjia_text"/>
-            <TextView
-                android:id="@+id/guanzhudianpu"
-                android:text="@string/wode_guanzhudianpu"
-                style="@style/wode_shoucangjia_text"/>
-            <TextView
-                android:id="@+id/zuji"
-                android:text="@string/wode_zuji"
-                style="@style/wode_shoucangjia_text"/>
-            <TextView
-                android:id="@+id/hongbaokaquan"
-                android:text="@string/wode_hongbaokaquan"
-                style="@style/wode_shoucangjia_text"/>
-        </TableRow>
-    </TableLayout>
-
     //会员中心
     <RelativeLayout
         style="@style/wode_huiyuanzhongxin"
         android:background="@drawable/wode_corner_up">
         <TextView
-            android:id="@+id/huiyuanzhongxin"
-            android:text="@string/huiyuanzhongxin"
-            style="@style/wode_huiyuanzhongxin1"/>
+            android:id="@+id/hongbaoqiandao"
+            style="@style/wode_huiyuanzhongxin1"
+            android:layout_toRightOf="@+id/wode_fenge2"
+            android:text="@string/hongbaoqiandao" />
         <TextView
-            android:text="@string/huiyuanzhongxin2"
-            android:layout_below="@+id/huiyuanzhongxin"
-            style="@style/wode_huiyuanzhongxin2"/>
+            style="@style/wode_huiyuanzhongxin2"
+            android:layout_below="@+id/hongbaoqiandao"
+            android:layout_toRightOf="@+id/wode_fenge2"
+            android:text="@string/hongbaoshengqianka2" />
         <ImageView
             android:id="@+id/huiyuanzhongxin_i"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_toLeftOf="@+id/wode_fenge1"
-            android:src="@mipmap/wode_88huiyuan"
+            android:src="@mipmap/redpacket"
             android:layout_marginRight="40px"/>
 
         //分割线
@@ -131,106 +68,52 @@
             android:background="#d3d3d3"
             android:layout_centerInParent="true"
             />
+
         <TextView
             android:id="@+id/tianmaojifen"
+            style="@style/wode_huiyuanzhongxin1"
             android:layout_toRightOf="@+id/wode_fenge1"
-            android:text="@string/tianmaojifen"
-            style="@style/wode_huiyuanzhongxin1"/>
+            android:text="我的积分" />
         <TextView
             android:layout_toRightOf="@+id/wode_fenge1"
             android:text="@string/tianmaojifen2"
             android:layout_below="@+id/tianmaojifen"
             style="@style/wode_huiyuanzhongxin2"/>
+
         <ImageView
             android:id="@+id/tianmaojifen_i"
             style="@style/wode_huiyuanzhongxin_img"
             android:layout_alignParentRight="true"
-            android:src="@mipmap/wode_tianmaojifen" />
+            android:src="@mipmap/integral" />
     </RelativeLayout>
 
-    <RelativeLayout
-        style="@style/wode_huiyuanzhongxin"
-        android:background="@drawable/wode_corner_down">
-        <TextView
-            android:id="@+id/hongbaoshengqianka"
-            android:text="@string/hongbaoshengqianka"
-            style="@style/wode_huiyuanzhongxin1"/>
-        <TextView
-            android:text="@string/hongbaoshengqianka2"
-            style="@style/wode_huiyuanzhongxin2"
-            android:layout_below="@+id/hongbaoshengqianka"/>
-        <ImageView
-            android:id="@+id/hongbaoshengqianka_i"
-            style="@style/wode_huiyuanzhongxin_img"
-            android:layout_toLeftOf="@+id/wode_fenge2"
-            android:src="@mipmap/wode_hongbao1" />
-        //分割线
-        <TextView
-            android:id="@+id/wode_fenge2"
-            style="@style/wode_fengexian"
-            android:background="#d3d3d3"
-            android:layout_centerInParent="true" />
-        <TextView
-            android:id="@+id/hongbaoqiandao"
-            android:layout_toRightOf="@+id/wode_fenge2"
-            android:text="@string/hongbaoqiandao"
-            style="@style/wode_huiyuanzhongxin1"/>
-        <TextView
-            android:text="@string/hongbaoshengqianka2"
-            android:layout_below="@+id/hongbaoqiandao"
-            android:layout_toRightOf="@+id/wode_fenge2"
-            style="@style/wode_huiyuanzhongxin2"/>
-        <ImageView
-            android:id="@+id/hongbaoqiandao_i"
-            style="@style/wode_huiyuanzhongxin_img"
-            android:layout_alignParentRight="true"
-            android:src="@mipmap/wode_hongbao2" />
-    </RelativeLayout>
-
-    //我的订单
-    <RelativeLayout
-        style="@style/wode_wodedingdan"
-        android:background="@drawable/wode_dingdan_corner_up">
-        <TextView
-            style="@style/wode_wodedingdan_text"
-            android:text="我的订单"/>
-        <TextView
-            android:id="@+id/quanbudingdan"
-            style="@style/wode_wodedingdan_text2"
-            android:text="查看全部订单"
-            android:drawableRight="@mipmap/youjiantou"
-            android:layout_alignParentRight="true"/>
-    </RelativeLayout>
 
     <TableLayout
         style="@style/wode_wodedingdan_table"
-        android:background="@drawable/wode_dingdan_corner_down">
+        android:background="@drawable/wode_dingdan_corner_down"
+        android:layout_marginTop="5dp">
         <TableRow
             style="@style/wode_wodedingdan_table_row"
             >
             <ImageButton
                 android:id="@+id/daifukuan"
-                android:src="@mipmap/wode_qianbao"
+                android:src="@mipmap/wallet"
                 android:background="#0000"
                 style="@style/wode_dingdan1"/>
-            <ImageButton
-                android:id="@+id/daifahuo"
-                android:src="@mipmap/wode_baoguo"
-                android:background="#0000"
-                style="@style/wode_dingdan1"/>
+
             <ImageButton
                 android:id="@+id/daishouhuo"
-                android:src="@mipmap/wode_kache"
+                android:src="@mipmap/task"
                 android:background="#0000"
                 style="@style/wode_dingdan1"/>
             <ImageButton
                 android:id="@+id/pingjia"
-                android:src="@mipmap/wode_pingjia"
+                android:src="@mipmap/comment"
                 android:background="#0000"
                 style="@style/wode_dingdan1"/>
             <ImageButton
                 android:id="@+id/tuikuan"
-                android:src="@mipmap/wode_tuikuan"
+                android:src="@mipmap/aftersale"
                 android:background="#0000"
                 style="@style/wode_dingdan1"/>
 
@@ -240,16 +123,14 @@
             style="@style/wode_wodedingdan_table_row">
             <TextView
                 style="@style/wode_dingdan2"
-                android:text="@string/wode_dingdan1"/>
+                android:text="我的钱包"/>
+
             <TextView
                 style="@style/wode_dingdan2"
-                android:text="@string/wode_dingdan2"/>
+                android:text="我的任务"/>
             <TextView
                 style="@style/wode_dingdan2"
-                android:text="@string/wode_dingdan3"/>
-            <TextView
-                style="@style/wode_dingdan2"
-                android:text="@string/wode_dingdan4"/>
+                android:text="我的评价"/>
             <TextView
                 style="@style/wode_dingdan2"
                 android:text="@string/wode_dingdan5"/>

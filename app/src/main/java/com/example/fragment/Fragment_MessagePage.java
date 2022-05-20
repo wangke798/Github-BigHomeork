@@ -7,11 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.annotation.ContentView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
 import com.example.Activity.MessageDatabase;
@@ -84,8 +87,8 @@ public class Fragment_MessagePage extends Fragment {
         //将message添加到list中
         fragment3_listview = view.findViewById(R.id.fragment3_listview);
         for(int i = 0; i < 11; i ++){
-                message = new MessageDatabase(message_name[i],last_message[i],message_time[i],header[i]);
-                list.add(message);
+            message = new MessageDatabase(message_name[i],last_message[i],message_time[i],header[i]);
+            list.add(message);
         }
 
         //为页面添加baseAdapter
