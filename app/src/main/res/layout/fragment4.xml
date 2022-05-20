@@ -12,12 +12,12 @@
         >
 
         <ImageButton
-            android:id="@+id/shezhi"
+            android:id="@+id/myset"
             style="@style/wode_dingbucaidanlan1"
             android:layout_alignParentRight="true"
             android:layout_marginRight="7.4dp"
             android:background="#0000"
-            android:src="@mipmap/shezhi" />
+            android:src="@mipmap/set" />
 
     </RelativeLayout>
 
@@ -46,12 +46,10 @@
         <TextView
             android:id="@+id/hongbaoqiandao"
             style="@style/wode_huiyuanzhongxin1"
-            android:layout_toRightOf="@+id/wode_fenge2"
             android:text="@string/hongbaoqiandao" />
         <TextView
             style="@style/wode_huiyuanzhongxin2"
             android:layout_below="@+id/hongbaoqiandao"
-            android:layout_toRightOf="@+id/wode_fenge2"
             android:text="@string/hongbaoshengqianka2" />
         <ImageView
             android:id="@+id/huiyuanzhongxin_i"
@@ -87,58 +85,58 @@
             android:src="@mipmap/integral" />
     </RelativeLayout>
 
-
-    <TableLayout
-        style="@style/wode_wodedingdan_table"
-        android:background="@drawable/wode_dingdan_corner_down"
-        android:layout_marginTop="5dp">
-        <TableRow
-            style="@style/wode_wodedingdan_table_row"
-            >
-            <ImageButton
-                android:id="@+id/daifukuan"
-                android:src="@mipmap/wallet"
-                android:background="#0000"
-                style="@style/wode_dingdan1"/>
-
-            <ImageButton
-                android:id="@+id/daishouhuo"
-                android:src="@mipmap/task"
-                android:background="#0000"
-                style="@style/wode_dingdan1"/>
-            <ImageButton
-                android:id="@+id/pingjia"
-                android:src="@mipmap/comment"
-                android:background="#0000"
-                style="@style/wode_dingdan1"/>
-            <ImageButton
-                android:id="@+id/tuikuan"
-                android:src="@mipmap/aftersale"
-                android:background="#0000"
-                style="@style/wode_dingdan1"/>
-
-        </TableRow>
-
-        <TableRow
-            style="@style/wode_wodedingdan_table_row">
-            <TextView
-                style="@style/wode_dingdan2"
-                android:text="我的钱包"/>
-
-            <TextView
-                style="@style/wode_dingdan2"
-                android:text="我的任务"/>
-            <TextView
-                style="@style/wode_dingdan2"
-                android:text="我的评价"/>
-            <TextView
-                style="@style/wode_dingdan2"
-                android:text="@string/wode_dingdan5"/>
-        </TableRow>
-
-    </TableLayout>
-
-
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/background_circle"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/mywallet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@mipmap/wallet"
+            android:background="@drawable/background_circle"
+            android:gravity="center"
+            android:text="我的钱包"
+            android:textColor="@drawable/text_color" />
+        <TextView
+            android:id="@+id/mytask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@mipmap/task"
+            android:drawablePadding="1dp"
+            android:gravity="center"
+            android:text="我的任务"
+            android:textColor="@drawable/text_color" />
+        <TextView
+            android:id="@+id/mycomment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@mipmap/comment"
+            android:drawablePadding="1dp"
+            android:gravity="center"
+            android:text="我的评价"
+            android:textColor="@drawable/text_color" />
+        <TextView
+            android:id="@+id/myaftersale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@mipmap/aftersale"
+            android:background="@drawable/background_circle"
+            android:drawablePadding="1dp"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/text_color" />
+    </LinearLayout>
 
 
 </LinearLayout>

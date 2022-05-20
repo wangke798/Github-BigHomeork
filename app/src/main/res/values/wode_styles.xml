@@ -129,12 +129,6 @@
         <item name="android:layout_marginRight">14.9dp</item>
     </style>
 
-    <style name="wode_wodedingdan_table">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">80dp</item>
-        <item name="android:layout_marginLeft">11.2dp</item>
-        <item name="android:layout_marginRight">11.2dp</item>
-    </style>
 
     <style name="wode_wodedingdan_table_row">
         <item name="android:layout_width">match_parent</item>
