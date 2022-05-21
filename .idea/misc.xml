@@ -9,19 +9,29 @@
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable-xhdpi/gradient_ramp.xml" value="0.1205" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable-xhdpi/search_button.xml" value="0.1205" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable-xhdpi/text_color.xml" value="0.1205" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/background_circle.xml" value="0.1535" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/background_circle_down.xml" value="0.1535" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1775" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/page2_edit_background.xml" value="0.1775" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/wode_corner_down.xml" value="0.1335" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/wode_corner_up.xml" value="0.1335" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/wode_dingdan_corner_down.xml" value="0.1335" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/drawable/wode_dingdan_corner_up.xml" value="0.1335" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/activity_findpassword.xml" value="0.253125" />
-        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/activity_main.xml" value="0.12310030395136778" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/activity_fuction.xml" value="0.1381340579710145" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/activity_main.xml" value="0.26621847886098404" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/activity_register.xml" value="0.20168066580377575" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment1.xml" value="0.26621847886098404" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment1_listview.xml" value="0.21195652173913043" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment2.xml" value="0.10555555555555556" />
         <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment3.xml" value="0.1" />
-        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment3_message_item.xml" value="0.1" />
-        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment4.xml" value="0.20168066580377575" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment3_message_item.xml" value="0.25" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment4.xml" value="0.26621847886098404" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment4_set.xml" value="0.26621847886098404" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment4_task.xml" value="0.23443223443223443" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment4_wallet.xml" value="0.253125" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment_task.xml" value="0.253125" />
+        <entry key="..\:/ASProjects/BigHomework/app/src/main/res/layout/fragment_wallet.xml" value="0.253125" />
         <entry key="..\:/AndroidStudioWorkSpace/BigHomework/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BigHomework/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BigHomework/app/src/main/res/layout/activity_fuction.xml" value="0.17753623188405798" />
