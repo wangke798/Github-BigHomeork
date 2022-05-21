@@ -1,31 +1,30 @@
 package com.example.Fragment;
 
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.Activity.CaptureActivity;
 import com.example.Adapter.Fragment1_Adapter;
 import com.example.myapplication.R;
 import com.example.optimization.Tasks;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
 public class Fragment_FirstPage extends Fragment {
 
     private ListView mylistview;
-    private List<Tasks> datas=new ArrayList<Tasks>();
+    private List<Tasks> datas= new ArrayList<>();
     private Fragment1_Adapter adapter1;
 
     public String[] text = {
@@ -78,19 +77,48 @@ public class Fragment_FirstPage extends Fragment {
         View fragmentView = inflater.inflate(R.layout.fragment1, container,false);
 
         initDatas();//初始化数据
-        mylistview=(ListView)fragmentView.findViewById(R.id.mylistview);
+        mylistview= fragmentView.findViewById(R.id.mylistview);
+
+        //二维码点击事件
+        fragmentView.findViewById(R.id.erweima).setOnClickListener(view -> initScan());
+
         adapter1=new Fragment1_Adapter(getActivity(),datas);
         mylistview.setAdapter(adapter1);
 
     return fragmentView;
 
     }
+
     private void initDatas(){
         for(int i=0;i<text.length;i++){
             Tasks task=new Tasks(text[i],text1[i],text2[i],photo[i]);
             datas.add(task);
         }
+    }
 
 
+    public void initScan() {
+        IntentIntegrator integrator = new IntentIntegrator(getActivity());
+        // 设置要扫描的条码类型，ONE_D_CODE_TYPES：一维码，QR_CODE_TYPES-二维码
+        integrator.setDesiredBarcodeFormats();
+        integrator.setCaptureActivity(CaptureActivity.class); //设置打开摄像头的Activity
+        integrator.setPrompt("请对准二维码"); //底部的提示文字，设为""可以置空
+        integrator.setCameraId(0); //前置或者后置摄像头
+        integrator.setBeepEnabled(false); //扫描成功的「哔哔」声，默认开启
+        integrator.setBarcodeImageEnabled(true);
+        integrator.initiateScan();
+    }
+
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        super.onActivityResult(requestCode, resultCode, intent);
+        if (requestCode == IntentIntegrator.REQUEST_CODE) {
+            IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
+            if (scanResult != null && scanResult.getContents() != null) {
+                String result = scanResult.getContents();
+                Log.d("扫码返回: ", result);
+            }
+        }
     }
 }

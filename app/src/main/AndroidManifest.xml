@@ -32,8 +32,13 @@
 
         <activity android:name="com.example.Fragment.Fragment_HomePage_Set" />
         <activity android:name="com.example.Fragment.Fragment_HomePage_Wallet" />
-
-
+        <activity android:name="com.example.Activity.CaptureActivity" />
     </application>
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
 
 </manifest>
