@@ -15,7 +15,10 @@
             android:drawableLeft="@mipmap/leftarrow"
             android:drawableRight="@mipmap/morething"
             android:text="  设置"
+            android:textColor="@color/black"
             android:gravity="center_vertical|left"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="5dp"
             android:textSize="20sp"/>
     </LinearLayout>
 
@@ -35,7 +38,7 @@
             android:layout_height="50dp"
             android:text="  我的收货地址"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="center_vertical|left"
             android:drawableRight="@mipmap/rightarrow"/>
         <LinearLayout
@@ -47,7 +50,7 @@
             android:layout_height="50dp"
             android:text="  我的档案"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="center_vertical|left"
             android:drawableRight="@mipmap/rightarrow"/>
         <LinearLayout
@@ -59,7 +62,7 @@
             android:layout_height="50dp"
             android:text="  账号和安全"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="center_vertical|left"
             android:drawableRight="@mipmap/rightarrow"/>
         <LinearLayout
@@ -71,7 +74,7 @@
             android:layout_height="50dp"
             android:text="  支付"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="center_vertical|left"
             android:drawableRight="@mipmap/rightarrow"/>
         <LinearLayout
@@ -83,7 +86,7 @@
             android:layout_height="50dp"
             android:text="  消息通知"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="center_vertical|left"
             android:drawableRight="@mipmap/rightarrow"/>
         <LinearLayout
@@ -95,7 +98,7 @@
             android:layout_height="50dp"
             android:text="  主题换肤"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="center_vertical|left"
             android:drawableRight="@mipmap/rightarrow"/>
         <LinearLayout
@@ -107,7 +110,7 @@
             android:layout_height="50dp"
             android:text="  模式切换"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="center_vertical|left"
             android:drawableRight="@mipmap/rightarrow"/>
         <LinearLayout
@@ -119,7 +122,7 @@
             android:layout_height="50dp"
             android:text="  隐私"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="center_vertical|left"
             android:drawableRight="@mipmap/rightarrow"/>
         <LinearLayout
@@ -131,7 +134,7 @@
             android:layout_height="50dp"
             android:text="  通用"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="center_vertical|left"
             android:drawableRight="@mipmap/rightarrow"/>
         <LinearLayout
@@ -143,7 +146,7 @@
             android:layout_height="50dp"
             android:text="  帮助与反馈"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="center_vertical|left"
             android:drawableRight="@mipmap/rightarrow"/>
         <LinearLayout
@@ -156,7 +159,7 @@
             android:layout_height="50dp"
             android:text="  切换账号"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="center" />
         <LinearLayout
             android:layout_width="match_parent"
@@ -167,7 +170,7 @@
             android:layout_height="50dp"
             android:text="  退出登录"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:gravity="center" />
         <LinearLayout
             android:layout_width="match_parent"

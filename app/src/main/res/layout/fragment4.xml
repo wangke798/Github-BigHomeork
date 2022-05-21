@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f2f2f2"
     android:orientation="vertical">
     //顶部菜单栏
-    <RelativeLayout
+    <FrameLayout
         android:id="@+id/fenqu1"
-        style="@style/wode_dingbucaidnalan"
-        >
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
 
         <ImageButton
             android:id="@+id/myset"
-            style="@style/wode_dingbucaidanlan1"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="7.4dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:background="#0000"
             android:src="@mipmap/set" />
 
-    </RelativeLayout>
+    </FrameLayout>
 
     //头像昵称
     <RelativeLayout
@@ -39,7 +40,6 @@
     </RelativeLayout>
 
 
-    //会员中心
     <RelativeLayout
         style="@style/wode_huiyuanzhongxin"
         android:background="@drawable/wode_corner_up">
@@ -85,58 +85,66 @@
             android:src="@mipmap/integral" />
     </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="380dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="5dp"
-        android:background="@drawable/background_circle"
-        android:layout_marginTop="10dp">
-        <TextView
-            android:id="@+id/mywallet"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="8dp"
-            android:drawableTop="@mipmap/wallet"
-            android:background="@drawable/background_circle"
-            android:gravity="center"
-            android:text="我的钱包"
-            android:textColor="@drawable/text_color" />
-        <TextView
-            android:id="@+id/mytask"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="8dp"
-            android:drawableTop="@mipmap/task"
-            android:drawablePadding="1dp"
-            android:gravity="center"
-            android:text="我的任务"
-            android:textColor="@drawable/text_color" />
-        <TextView
-            android:id="@+id/mycomment"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="8dp"
-            android:drawableTop="@mipmap/comment"
-            android:drawablePadding="1dp"
-            android:gravity="center"
-            android:text="我的评价"
-            android:textColor="@drawable/text_color" />
-        <TextView
-            android:id="@+id/myaftersale"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="8dp"
-            android:drawableTop="@mipmap/aftersale"
-            android:background="@drawable/background_circle"
-            android:drawablePadding="1dp"
-            android:gravity="center"
-            android:text="首页"
-            android:textColor="@drawable/text_color" />
-    </LinearLayout>
+    <RelativeLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft = "11.2dp"
+        android:layout_marginRight = "11.2dp"
+        android:orientation = "horizontal"
+        android:background="@drawable/background_circle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/mywallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/wallet"
+                android:drawablePadding="1dp"
+                android:gravity="center"
+                android:text="我的钱包"
+                android:textColor="@drawable/text_color" />
+
+            <TextView
+                android:id="@+id/mytask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/task"
+                android:drawablePadding="1dp"
+                android:gravity="center"
+                android:text="我的任务"
+                android:textColor="@drawable/text_color" />
+
+            <TextView
+                android:id="@+id/mycomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/comment"
+                android:drawablePadding="1dp"
+                android:gravity="center"
+                android:text="我的评价"
+                android:textColor="@drawable/text_color" />
+
+            <TextView
+                android:id="@+id/myaftersale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/aftersale"
+                android:drawablePadding="1dp"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@drawable/text_color" />
+        </LinearLayout>
+
+    </RelativeLayout>
 
 
 </LinearLayout>
