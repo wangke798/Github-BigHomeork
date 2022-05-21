@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        >
+        <com.example.optimization.CircleImage
+            android:id="@+id/left_header"
+            android:src="@drawable/photo10"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+
+            />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/blue_message">
+            <TextView
+                android:id="@+id/left_msg"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="fill_horizontal"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="end"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/blue_message">
+            <TextView
+                android:id="@+id/right_msg"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="fill_horizontal"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+        <com.example.optimization.CircleImage
+            android:id="@+id/right_header"
+            android:src="@drawable/photo10"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>
