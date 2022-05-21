@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name="com.example.Activity.ChatActivity"
+            android:exported="true" >
+
+        </activity>
+        <activity
             android:name="com.example.Activity.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -23,17 +28,12 @@
             android:label="function_activity" />
         <activity
             android:name="com.example.Activity.FindPasswordActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name="com.example.Activity.RegisterActivity"
-            android:exported="true">
-        </activity>
-
+            android:exported="true"></activity>
         <activity android:name="com.example.Fragment.Fragment_HomePage_Set" />
         <activity android:name="com.example.Fragment.Fragment_HomePage_Wallet" />
-
-
     </application>
 
 </manifest>

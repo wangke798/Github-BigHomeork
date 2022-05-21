@@ -2,21 +2,20 @@ package com.example.Fragment;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import androidx.annotation.ContentView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
+import com.example.Activity.ChatActivity;
 import com.example.Activity.MessageDatabase;
 import com.example.Adapter.Fragment3_BaseAdapter;
 import com.example.myapplication.R;
@@ -78,6 +77,7 @@ public class Fragment_MessagePage extends Fragment {
             R.drawable.photo10,
     };
     private MessageDatabase message;
+    private Intent intent;
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
@@ -97,7 +97,14 @@ public class Fragment_MessagePage extends Fragment {
         fragment3_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+                intent = new Intent(getActivity(), ChatActivity.class);
+                String name = list.get(i).getMessage_name();
+                int header = list.get(i).getHeader();
+                Bundle bundle = new Bundle();
+                bundle.putString("name",name);
+                bundle.putInt("header",header);
+                intent.putExtras(bundle);
+                startActivityForResult(intent,1);
             }
 
         });
