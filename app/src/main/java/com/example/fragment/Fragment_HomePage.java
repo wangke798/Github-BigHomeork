@@ -46,16 +46,5 @@ public class Fragment_HomePage extends Fragment {
             }
         });
 
-        TextView mytask = (TextView)getActivity().findViewById(R.id.mytask);
-        mytask.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Intent fragment_homepage_task=new Intent();
-                fragment_homepage_task.setClass(getActivity(),Fragment_HomePage_Task.class);
-                startActivity(fragment_homepage_task);
-            }
-        });
-
     }
 }

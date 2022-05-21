@@ -87,8 +87,8 @@ public class Fragment_MessagePage extends Fragment {
         //将message添加到list中
         fragment3_listview = view.findViewById(R.id.fragment3_listview);
         for(int i = 0; i < 11; i ++){
-            message = new MessageDatabase(message_name[i],last_message[i],message_time[i],header[i]);
-            list.add(message);
+                message = new MessageDatabase(message_name[i],last_message[i],message_time[i],header[i]);
+                list.add(message);
         }
 
         //为页面添加baseAdapter
